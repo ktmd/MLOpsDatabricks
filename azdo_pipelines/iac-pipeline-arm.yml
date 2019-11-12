@@ -10,9 +10,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  baseName: $[coalesce(variables['baseNameOverride'], 'mlopsdb')]
+  baseName: $[coalesce(variables['baseNameOverride'], 'ktmlopsdb')]
   location: $[coalesce(variables['locationOverride'], 'eastus')]
-  azuresub: $[coalesce(variables['azuresubOverride'], 'b256ed32-7294-4000-bee5-3674da402af1')]
+  azuresub: $[coalesce(variables['azuresubOverride'], 'Azure Pass - Sponsorship')]
 
 steps:
 - task: AzureResourceGroupDeployment@2
